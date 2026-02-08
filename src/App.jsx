@@ -48,7 +48,7 @@ const emailLink = `mailto:${bookingEmail}?subject=${encodeURIComponent(
     { name: "Gallery2", image: "/images/ga5.jpeg" },
     { name: "Gallery2", image: "/images/ga8.jpeg" },
     { name: "Gallery2", image: "/images/ga7.jpeg" },
-    { name: "Budget room", image: "/images/anotherroom.jpg" },
+    { name: "Budget room", image: "/images/anotherroom.jpeg" },
   ];
 
   return (

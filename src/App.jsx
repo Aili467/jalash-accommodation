@@ -39,6 +39,17 @@ const emailLink = `mailto:${bookingEmail}?subject=${encodeURIComponent(
     { name: "Room 5", image: "/images/room5.jpeg" },
     { name: "Room 6", image: "/images/room6.jpeg" },
   ];
+  const galleryImages = [
+    { name: "Bathroom", image: "/images/bathroom.jpeg" },
+    { name: "Kitchen", image: "/images/kitchen.jpeg" },
+    { name: "Front Area", image: "/images/front.jpg" },
+    { name: "Bathroom 2", image: "/images/ga1.jpeg" },
+    { name: "Gallery1", image: "/images/ga2.jpeg" },
+    { name: "Gallery2", image: "/images/ga5.jpeg" },
+    { name: "Gallery2", image: "/images/ga8.jpeg" },
+    { name: "Gallery2", image: "/images/ga7.jpeg" },
+    { name: "Budget room", image: "/images/anotherroom.jpg" },
+  ];
 
   return (
     <div style={{ fontFamily: "Arial, sans-serif", lineHeight: "1.6" }}>
@@ -102,22 +113,22 @@ const emailLink = `mailto:${bookingEmail}?subject=${encodeURIComponent(
       </section>
 
       {/* Gallery */}
-      <section style={{ background: "#f4f4f4", padding: "30px" }}>
+       <section style={{ background: "#f4f4f4", padding: "30px" }}>
         <h2>Gallery</h2>
         <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
-          {rooms.map((room, index) => (
-            <img
-              key={index}
-              src={room.image}
-              alt={`Gallery ${index + 1}`}
-              style={{
-                width: "200px",
-                height: "150px",
-                objectFit: "cover",
-                borderRadius: "6px",
-              }}
-            />
-          ))}
+        {galleryImages.map((item, index) => (
+  <img
+    key={index}
+    src={item.image}
+    alt={item.name}
+    style={{
+      width: "200px",
+      height: "150px",
+      objectFit: "cover",
+      borderRadius: "6px",
+    }}
+  />
+))}
         </div>
       </section>
 

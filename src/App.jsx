@@ -32,12 +32,12 @@ const emailLink = `mailto:${bookingEmail}?subject=${encodeURIComponent(
 )}&body=${encodeURIComponent(emailBody)}`;
 
   const rooms = [
-    { name: "Room 1", image: "/images/room1.jpg" },
-    { name: "Room 2", image: "/images/room2.jpg" },
-    { name: "Room 3", image: "/images/room3.jpg" },
-    { name: "Room 4", image: "/images/room4.jpg" },
-    { name: "Room 5", image: "/images/room5.jpg" },
-    { name: "Room 6", image: "/images/room6.jpg" },
+    { name: "Room 1", image: "/images/room1.jpeg" },
+    { name: "Room 2", image: "/images/room2.jpeg" },
+    { name: "Room 3", image: "/images/room3.jpeg" },
+    { name: "Room 4", image: "/images/room4.jpeg" },
+    { name: "Room 5", image: "/images/room5.jpeg" },
+    { name: "Room 6", image: "/images/room6.jpeg" },
   ];
 
   return (
